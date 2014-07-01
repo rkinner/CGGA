@@ -1,9 +1,9 @@
-﻿<%@ Page Title="Reservations" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="WebApplication1.About" %>
+﻿<%@ Page Title="Reservation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="WebApplication1.About" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
         <h1><%: Title%>.</h1>
-        <h2>Tee Time Management System </h2>
+        <h2>Tee Time Management System</h2>
     </hgroup>
 
     <article>
@@ -27,7 +27,8 @@
         </p>
         <ul>
             <li><a runat="server" href="~/CGGA.aspx">Home</a></li>
-            <li><a runat="server" href="~/About.aspx">About</a></li>
+            <li><a runat="server" href="~/About.aspx">Reservations</a></li>
+            <li><a runat="server" href="~/AboutUs.aspx">About Us</a></li>
             <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
         </ul>
     </aside>

@@ -63,6 +63,7 @@
                     <ul id="menu">
                         <li><a runat="server" href="~/CGGA.aspx">Home</a></li>
                         <li><a runat="server" href="~/About.aspx">Reservations</a></li>
+                        <li><a runat="server" href="~/AboutUs.aspx">About Us</a></li>
                         <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
                     </ul>
                 </nav>
@@ -78,7 +79,7 @@
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - Cypress Garden Golf Academy</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Cypress Gardens Golf Academy</p>
             </div>
         </div>
     </footer>
