@@ -18,7 +18,12 @@
     
 <!DOCTYPE html>
 		<head>
-		    <link rel='stylesheet' id='customizr-skin-css'  href='Stylesheetslider.css' type='text/css' media='all' />
+		    <link rel='stylesheet' id='customizr-skin-css'  href='site.css' type='text/css' media='all' />
+            <style type="text/css">
+                <!-- 
+                A{text-decoration:none} 
+            -->
+            </style>
 		</head>
 		    <div id="customizr-slider" class=" carousel slide">
 
@@ -63,8 +68,7 @@
     var TCParams = { "FancyBoxState": "1", "FancyBoxAutoscale": "1", "SliderName": "front-page", "SliderDelay": "5000", "SliderHover": "1", "SmoothScroll": "linear", "ReorderBlocks": "1", "HasComments": "", "LeftSidebarClass": ".span3.left.tc-sidebar", "RightSidebarClass": ".span3.right.tc-sidebar" };
     /* ]]> */
 </script>
-</body>
-</html>
+
 
 
 
