@@ -81,7 +81,7 @@
 
 
     <aside>
-        <h3>Usefull links</h3>
+        <h3>Useful links</h3>
         <p>        
             Click below for fast navigation
         </p>
