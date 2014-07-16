@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Reservation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="WebApplication1.About" %>
+<%@ Page Title="Reservation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="WebApplication1.About" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
@@ -6,82 +6,62 @@
         <h2>Tee Time Management System</h2>
     </hgroup>
 
+    
     <article>
-        
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CalendarView — JavaScript Calendar Widget</title>
-    <link rel="stylesheet" href="../stylesheets/calendarview.css">
-    <style>
-      body {
-        font-family: Trebuchet MS;
-      }
-      div.calendar {
-        max-width: 240px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      div.calendar table {
-        width: 100%;
-      }
-      div.dateField {
-        width: 140px;
-        padding: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        color: #555;
-        background-color: white;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-      }
-      div#popupDateField:hover {
-        background-color: #cde;
-        cursor: pointer;
-      }
-    </style>
-    <script src="../javascripts/prototype.js"></script>
-    <script src="../javascripts/calendarview.js"></script>
-    <script>
-        function setupCalendars() {
-            // Embedded Calendar
-            Calendar.setup(
-              {
-                  dateField: 'embeddedDateField',
-                  parentElement: 'embeddedCalendar'
-              }
-            )
-        }
-        Event.observe(window, 'load', function () { setupCalendars() })
-    </script>
-  </head>
-  <body>
-    <div style="float: left; width: 50%">
-      <div style="height: 400px; background-color: #efefef; padding: 10px; -webkit-border-radius: 12px; -moz-border-radius: 12px; margin-right: 10px">
-        <h3 style="text-align: center; background-color: white; -webkit-border-radius: 10px; -moz-border-radius: 10px; margin-top: 0px; margin-bottom: 20px; padding: 8px">
-          Select your Tee Time Date Below
-        </h3>
-        <div id="embeddedExample" style="">
-          <div id="embeddedCalendar" style="margin-left: auto; margin-right: auto">
-          </div>
-          <br />
-          <div id="embeddedDateField" class="dateField">
-            Your Selected Date
-          </div>
+        <form action="/About.aspx.cs" method="post">
+            <header> 
+                <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+                  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+                  <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+                  <link rel="stylesheet" href="/resources/demos/style.css">
+                  <script>
+                      $(function () {
+                          $("#datepicker").datepicker();
+                      });
+                  </script>
+            </header>
+            <div>
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="first_name" />
+            </div>
+            <div>
+                <label for="name">Last Name:</label>
+                <input type="text" id="Lastname" name="last_name" />
+            </div>
             
-          <br />
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+            </div>
+         
+            <div>
+               <label for="mail">Tee Time Date:</label>
+               <input type="text" id="datepicker">
+            </div>
+
+            <div>
+                <label for="NoOfGuests">No. of Guests</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+    
+            <div class="button">
+                <button type="submit" onclick="location.href='google.com'">Reserve your Tee Time</button>
+            </div>
+        </form>
     </article>
 
-
     <aside>
-        <h3>Useful links</h3>
+        <h3>Usefull links</h3>
         <p>        
             Click below for fast navigation
         </p>
