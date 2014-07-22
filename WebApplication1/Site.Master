@@ -42,7 +42,7 @@
                 </p>
             </div>
             <div class="float-right">
-                <section id="login">
+                <%--<section id="login">
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul>
@@ -58,7 +58,7 @@
                             </p>
                         </LoggedInTemplate>
                     </asp:LoginView>
-                </section>
+                </section>--%>
                 <nav>
                     <ul id="menu">
                         <li><a runat="server" href="~/CGGA.aspx">Home</a></li>

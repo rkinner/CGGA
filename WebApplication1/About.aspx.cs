@@ -9,16 +9,22 @@ namespace WebApplication1
 {
     public partial class About : Page
     {
+        List<customer> allCustomers = new List<customer>();
+        List<teetime> bookedTeeTimes = new List<teetime>();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
             {
-                string fName = Request.Form["first_name"];
-                string lName = Request.Form["last_name"];
-                string email = Request.Form["user_email"];
+                customer newCustomer = new customer();
+                newCustomer.firstName = Request.Form["first_name"];
+                newCustomer.lastName = Request.Form["last_name"];
+                newCustomer.email = Request.Form["user_email"];
+                if (!allCustomers.Contains(newCustomer))
+                    allCustomers.Add(newCustomer);
 
+                teetime booking = new teetime();
                 
-
             }
         }
 
@@ -44,5 +50,21 @@ namespace WebApplication1
         {
 
         }
+    }
+    public class customer
+    {
+        //attributes
+        public string firstName;
+        public string lastName;
+        public string email;
+
+    }
+
+    public class teetime
+    {
+        //attributes
+        public DateTime time;
+        public customer booker;
+        public int numGuests;
     }
 }

@@ -36,7 +36,7 @@
          
             <div>
                <label for="mail">Tee Time Date:</label>
-               <input type="text" id="datepicker">
+               <input type="text" id="datepicker" name="date">
             </div>
 
             <div>
@@ -61,5 +61,5 @@
 
  
      </form>
-
+        </article>
 </asp:Content>
