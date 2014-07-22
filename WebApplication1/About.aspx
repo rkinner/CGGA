@@ -1,4 +1,4 @@
-<%@ Page Title="Reservation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="WebApplication1.About" %>
+<%@ Page Title="Reservations" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="WebApplication1.About" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
@@ -40,36 +40,26 @@
             </div>
 
             <div>
-                <label for="NoOfGuests">No. of Guests</label>
-                <select>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
             </div>
 
             <div>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
+                <label for="NoOfGuests">No. of Guests</label>
+                <asp:DropDownList ID="NoGuests" runat="server">
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem>
+                </asp:DropDownList>
             </div>
-    
-            <div class="button">
-                <button type="submit" onclick="location.href='google.com'">Reserve your Tee Time</button>
-            </div>
-        </form>
-    </article>
 
-    <aside>
-        <h3>Usefull links</h3>
-        <p>        
-            Click below for fast navigation
-        </p>
-        <ul>
-            <li><a runat="server" href="~/CGGA.aspx">Home</a></li>
-            <li><a runat="server" href="~/About.aspx">Reservations</a></li>
-            <li><a runat="server" href="~/AboutUs.aspx">About Us</a></li>
-            <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
-        </ul>
-    </aside>
+            <asp:Button ID ="Submit" 
+                Text ="Submit"
+                OnClick="Submit_Click"
+                runat="server"/>
+            <asp:Label ID="GreetingLabel" runat="server" 
+                 Visible="false" Text="Thank you for reserving a tee time with us!" />
+
+ 
+     </form>
+
 </asp:Content>
