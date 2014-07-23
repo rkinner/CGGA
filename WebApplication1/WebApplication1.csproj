@@ -185,7 +185,6 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
-    <Content Include="Content\themes\calendarview.css" />
     <Content Include="Content\Images\accent.png" />
     <Content Include="Content\Images\bullet.png" />
     <Content Include="Content\Images\heroAccent.png" />
@@ -201,6 +200,7 @@
     <Content Include="Content\Images\orderedList9.png" />
     <Content Include="JavaScript1.js" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CGGA.pubxml" />
     <None Include="Properties\PublishProfiles\Knights Enterprise IT Solutions.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="rateStyleSheet.css" />
@@ -210,7 +210,6 @@
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Scripts\WebForms\calenderview.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -227,7 +226,6 @@
     <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
     <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
     <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
-    <Content Include="Scripts\WebForms\prototype.js" />
     <Content Include="Scripts\WebForms\SmartNav.js" />
     <Content Include="Scripts\WebForms\TreeView.js" />
     <Content Include="Scripts\WebForms\WebForms.js" />
@@ -236,8 +234,6 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="StyleSheet1.css" />
-    <Content Include="StyleSheetSlider.css" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
