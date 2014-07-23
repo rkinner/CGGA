@@ -6,7 +6,7 @@
 
     
 <!DOCTYPE html>
-		<head>
+<%--		<head>
 		    <link rel='stylesheet' id='customizr-skin-css'  href='site.css' type='text/css' media='all' />
             <style type="text/css">
                 <!-- 
@@ -20,7 +20,7 @@
               
                                   <div class="item active slide-59">
 
-              <div class="carousel-image slider-full"><img width="1184" height="500" src="Images/scrollpicture1.png" class="attachment-slider-full" alt="Tee Times" /></div>
+              <div class="carousel-image slider-full"><img width="1184" height="500" src="~/Content/Images/ScrollPicture1.png" class="attachment-slider-full" alt="Tee Times" /></div>
               <div class="carousel-caption"><h1 >Tee Time Reservation</h1> <p class="lead" >Schedule a tee time today. Implemented by Knights Enterprise IT Solutions.</p> <a class="btn btn-large btn-primary" href="About.aspx">Click here for more information!</a></div>
             </div><!-- /.item -->
 
@@ -56,8 +56,7 @@
     /* <![CDATA[ */
     var TCParams = { "FancyBoxState": "1", "FancyBoxAutoscale": "1", "SliderName": "front-page", "SliderDelay": "5000", "SliderHover": "1", "SmoothScroll": "linear", "ReorderBlocks": "1", "HasComments": "", "LeftSidebarClass": ".span3.left.tc-sidebar", "RightSidebarClass": ".span3.right.tc-sidebar" };
     /* ]]> */
-</script>
-
-   // <img src="ScrollPicture1.png" />
-    <p1>Cypress Gardens is the premiere golf course in Central Florida.</p1>
+</script>--%>
+    <asp:Image runat="server" ImageUrl="~/Content/Images/ScrollPicture1.png" width="1000" height="450" />
+    <p>Cypress Gardens is the premiere golf course in Central Florida.</p>
 </asp:Content>
