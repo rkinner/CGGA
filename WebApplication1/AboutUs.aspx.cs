@@ -11,7 +11,14 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Table1.Rows[1].Cells[1].Text = "$90";
+            Table1.Rows[1].Cells[2].Text = "$100";
 
+            Table1.Rows[2].Cells[1].Text = "$80";
+            Table1.Rows[2].Cells[2].Text = "$90";
+
+            Table1.Rows[3].Cells[1].Text = "$70";
+            Table1.Rows[3].Cells[2].Text = "$80";
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)

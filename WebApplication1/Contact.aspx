@@ -3,7 +3,7 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
         <h1><%: Title %>.</h1>
-        <h2>We would love to hear from you! Contact us via any of the methods listed below.</h2>
+        <h2>We would love to hear from you.</h2>
     </hgroup>
 
     <section class="contact">

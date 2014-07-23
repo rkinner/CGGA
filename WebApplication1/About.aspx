@@ -3,7 +3,7 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
         <h1><%: Title%>.</h1>
-        <h2>Tee Time Management System</h2>
+        <h2>Book a Tee Time</h2>
     </hgroup>
 
     

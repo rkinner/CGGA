@@ -6,7 +6,7 @@
 
     
 <!DOCTYPE html>
-<%--		<head>
+		<head>
 		    <link rel='stylesheet' id='customizr-skin-css'  href='site.css' type='text/css' media='all' />
             <style type="text/css">
                 <!-- 
@@ -56,8 +56,8 @@
     /* <![CDATA[ */
     var TCParams = { "FancyBoxState": "1", "FancyBoxAutoscale": "1", "SliderName": "front-page", "SliderDelay": "5000", "SliderHover": "1", "SmoothScroll": "linear", "ReorderBlocks": "1", "HasComments": "", "LeftSidebarClass": ".span3.left.tc-sidebar", "RightSidebarClass": ".span3.right.tc-sidebar" };
     /* ]]> */
-</script>--%>
+</script>
 
-    <img src="ScrollPicture1.png" />
+   // <img src="ScrollPicture1.png" />
     <p1>Cypress Gardens is the premiere golf course in Central Florida.</p1>
 </asp:Content>
