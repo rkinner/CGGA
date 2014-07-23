@@ -17,16 +17,17 @@
                   <script>
                       $(function () {
                           $("#datepicker").datepicker();
+                          
                       });
                   </script>
             </header>
             <div>
                 <label for="name">First Name:</label>
-                <input type="text" id="name" name="first_name" />
+                <input type="text" id="name" name="first_name"  />
             </div>
             <div>
                 <label for="name">Last Name:</label>
-                <input type="text" id="Lastname" name="last_name" />
+                <input type="text" id="Lastname" name="last_name"  />
             </div>
             
             <div>
@@ -35,16 +36,29 @@
             </div>
          
             <div>
-               <label for="mail">Tee Time Date:</label>
-               <input type="text" id="datepicker" name="date">
+               <label for="mail">Date:</label>
+               <input type="text" id="datepicker" name="date" >
+            </div>
+
+            <%--<div>
+                <label>Time:</label>
+                <asp:DropDownList ID="DropDownList1" runat="server"  >
+                    <asp:ListItem>Morning 7:30am-10:00am</asp:ListItem>
+                    <asp:ListItem>Mid-Day 10:00am-2:00pm</asp:ListItem>
+                    <asp:ListItem>Twilight after 2:00pm</asp:ListItem>
+                </asp:DropDownList>
+            </div>--%>
+
+            <div>
+                <label>Time:</label>
+                <asp:DropDownList ID="DropDownList2" runat="server" >
+                  
+                </asp:DropDownList>
             </div>
 
             <div>
-            </div>
-
-            <div>
-                <label for="NoOfGuests">No. of Guests</label>
-                <asp:DropDownList ID="NoGuests" runat="server">
+                <label for="NoOfGuests">No. of Guests </label>
+                <asp:DropDownList ID="NoGuests"  runat="server">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
                     <asp:ListItem>3</asp:ListItem>

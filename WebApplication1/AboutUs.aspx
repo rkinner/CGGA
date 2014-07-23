@@ -5,7 +5,37 @@
         <h1>About Us.</h1>
         <h2>Everything you need to know about CGGA</h2>
     </hgroup>
-
+   <article>
+       <h3>Tee Time Rates</h3>
+       <asp:DropDownList ID="Dates" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true">
+            <asp:ListItem>12/26 - 5/31</asp:ListItem>
+            <asp:ListItem>6/1 - 9/15</asp:ListItem>
+            <asp:ListItem>9/16 - 12/24</asp:ListItem>
+       </asp:DropDownList>
+       <asp:Table ID="Table1" runat="server">
+           <asp:TableHeaderRow ID="row1">
+               <asp:TableHeaderCell></asp:TableHeaderCell>
+               <asp:TableHeaderCell>MON-THU</asp:TableHeaderCell>
+               <asp:TableHeaderCell>FRI-SUN</asp:TableHeaderCell>
+           </asp:TableHeaderRow>
+           <asp:TableRow ID="row2">
+               <asp:TableCell>Morning Rates 7:30am-10:00am</asp:TableCell>
+               <asp:TableCell runat="server"></asp:TableCell>
+               <asp:TableCell runat="server"></asp:TableCell>
+           </asp:TableRow>
+           <asp:TableRow ID="row3">
+               <asp:TableCell >Mid-Day Rates 10:00am-2:00pm</asp:TableCell>
+               <asp:TableCell runat="server"></asp:TableCell>
+               <asp:TableCell runat="server"></asp:TableCell>
+           </asp:TableRow>
+           <asp:TableRow ID="row4">
+               <asp:TableCell>Twilight Rates after 2:00pm</asp:TableCell>
+               <asp:TableCell runat="server"></asp:TableCell>
+               <asp:TableCell runat="server"></asp:TableCell>
+           </asp:TableRow>
+       </asp:Table>
+   </article>
+        
     <article>
         <h3>CGGA</h3>
         <p>Using the land’s natural contours as a canvas and a fertile imagination as a palette, this meticulously designed course was created with you in mind. Our 18-hole masterpiece pulls in elements from several of the world’s classic courses - some designed a century ago. The layout ingeniously blends its traditional character with endless subtleties for a challenging experience. Mindful of the natural elements and in homage to the game’s storied history, we here at CGGA created a golf course of great integrity and environmental consciousness that seamlessly folds into the terrain, so it appears to have been here forever.
@@ -27,16 +57,4 @@
         <p><strong>MEN</strong> – Shirts with collars and sleeves. Slacks or Bermuda shorts are considered appropriate attire. Tank tops, tee shirts, fishnet tops, cut-offs, sweat pants, warm up suits, blue jeans or denim shorts, tennis shorts, short shorts or other athletic shorts are not permitted.<br /><br /><strong>WOMEN</strong> – Dresses, skirts, mid-length shorts and blouses are considered appropriate attire. Halter tops, tee shirts, fishnet tops, bathing suits, sweat pants, warm up suits, blue jeans or denim shorts, tennis dress, athletic shorts, cut-offs or short shorts are not permitted.<br /><br /><strong>SHOES</strong> – Golf shoes with no metal spikes are required on the golf course. Tennis, soft sole and field shoes are only permitted if approved by the golf shop.<br /><br /><i>Improperly dressed golfers will be asked to change before being allowed to play or practice. The Golf Staff reserves the right to make final decisions on compliance with the dress code policy.</i></p>
     </article>
 
-    <aside>
-        <h3>Useful links</h3>
-        <p>        
-            Click below for fast navigation
-        </p>
-        <ul>
-            <li><a id="A1" runat="server" href="~/CGGA.aspx">Home</a></li>
-            <li><a id="A2" runat="server" href="~/About.aspx">Reservations</a></li>
-            <li><a id="A3" runat="server" href="~/AboutUs.aspx">About Us</a></li>
-            <li><a id="A4" runat="server" href="~/Contact.aspx">Contact</a></li>
-        </ul>
-    </aside>
 </asp:Content>
